@@ -1,0 +1,37 @@
+ .header-navbar{
+    margin-top:5%;
+    
+ }
+ .header-navbar-text{
+    text-align:center
+ }
+ .cv{
+    padding:10px;
+    border-radius: 5px;
+    background-color:black;
+    color:white;
+    border: 1px solid black
+    ;
+ }
+ .cv:hover{
+   padding:10px;
+   border-radius: 5px;
+   text-decoration: none;
+   background-color:burlywood;
+   color:white;
+   border: 1px solid burlywood
+   ;
+}
+ .p-declear{
+    font-size: 20px;
+    width:inherit;
+    color:whitesmoke;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif    
+ }
+ .p-declear p{
+   text-align:justify;
+   display:inline-block;position:relative;max-width: 1000px;width: auto;
+   margin-left: 15%;
+   
+ }
