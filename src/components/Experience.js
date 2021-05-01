@@ -2,8 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
 import Navbar from "./Navbar";
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import uploadedFileLink from '../cv/sharif_cv_updated_2.pdf';
+import { Button } from "react-bootstrap";
 const useStyles = makeStyles(theme => ({
   mainContainer: {
     background: "#233"
@@ -113,16 +115,24 @@ const Experience = () => {
   return (
     <>
       <Navbar></Navbar>
+  
       <Box component="header" className={classes.mainContainer}>
+    
         <Typography variant="h4" align="center" className={classes.heading}>
-          working experience
+        <a href={uploadedFileLink} target="_blank" rel="noopener noreferrer" download>
+   <Button className="mt-3 mb-5">
+      
+      Download CV <FontAwesomeIcon icon={faDownload}/>
+   </Button>
+</a><br></br>
+          experience
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            BAIUST HR Forum
+            BAIUST Computer Club
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -138,27 +148,27 @@ const Experience = () => {
               aligh="center"
               style={{ color: "tomato" }}
             >
-              2018-Present
+              2020-Present
             </Typography>
             <Typography
               variant="subtitle1"
               aligh="center"
               style={{ color: "tan" }}
             >
-             I am currently work with BAIUST HRF core Team
-              and I am general secretary of HRF. We have
+             I am currently work with BAIUST Computer Club 
+              and I am general secretary of BCC. We have
               arranged some program like, Career Lab 10,
               Global Vendor Management, Communication,
               BAIUST Express 21, Essential Skills Required by
               banglalink and many others program. I have
-              won “Most Valuable Person” From BAIUST HRF.
+              won “Most Valuable Person” From BAIUST BCC.
             </Typography>
           </Box>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            Interactive Cares
+            Web Development
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -166,33 +176,35 @@ const Experience = () => {
               aligh="center"
               className={classes.subHeading}
             >
-             Internship 
+             Front end Developer 
             </Typography>
             <Typography
               variant="body1"
               aligh="center"
               style={{ color: "tomato" }}
             >
-            20-08-20 to 
-            20-11-20
+            01-01-21
             </Typography>
             <Typography
               variant="subtitle1"
               aligh="center"
               style={{ color: "tan" }}
             >
-                I have worked as a video editor officer 
-              in the company. I have done with some 
-              special project for the company and I 
-              have got some new ideas. That was 
-              really a good experience for me.
+               • HTML-CSS-BOOTSTRAP
+• JAVASCRIPT
+• REACT JS
+• REACT-BOOTSTRAP
+• MATERIAL UI
+• NODE JS ( BASIC KNOWLEDGE )
+• MONGODB ( BASIC KNOWLEDGE )
+• GIT / GITHUB
             </Typography>
           </Box>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            AIESEC
+            TRAININGS
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -200,31 +212,30 @@ const Experience = () => {
               aligh="center"
               className={classes.subHeading}
             >
-              Member
+              Learning
             </Typography>
             <Typography
               variant="body1"
               aligh="center"
               style={{ color: "tomato" }}
             >
-             11-08-20-Present
+             01-01-21-Present
             </Typography>
             <Typography
               variant="subtitle1"
               aligh="center"
               style={{ color: "tan" }}
             >
-               am currently work in AIESEC as 
-              members. I am working for build up 
-              my leadership skills. AIESEC is working 
-              for buildup leadership skill globally.
+               1. Full Stack Web Development, Programming Hero.
+2. Machine Learning, Coursera online course.
+3. Cyber Security, Bd Cyber 71.
                           </Typography>
           </Box>
           <Typography
             variant="h2"
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            Kore Search
+            Programming Knowledge
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography
@@ -232,14 +243,14 @@ const Experience = () => {
               aligh="center"
               className={classes.subHeading}
             >
-             Former Peer Leader
+             Basic Knowledge
             </Typography>
             <Typography
               variant="body1"
               aligh="center"
               style={{ color: "tomato" }}
             >
-              12/19 to 08/2020
+              02-04-2018
 
             </Typography>
             <Typography
@@ -247,12 +258,10 @@ const Experience = () => {
               aligh="center"
               style={{ color: "tan" }}
             >
-             This is a job placement training 
-            center of Bangladesh. I worked here 
-            as a peer leader and I have learned 
-            some important skills like 
-            communication, build soft skills, 
-            and time management.
+             • C 
+             • C++ 
+             • JAVA
+             • Javascript
             </Typography>
           </Box>
         </Box>

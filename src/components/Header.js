@@ -5,6 +5,8 @@ import Typed from "react-typed";
 import personalPicture from "../images/sharif.jpg";
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { Alert } from "react-bootstrap";
 import uploadedFileLink from '../cv/sharif_cv_updated_2.pdf'
  import ProjectDemo from '../components/SharedComponent/ProjectDemo.js'
@@ -46,7 +48,7 @@ const Header = () => {
     <br />
     <Typography className={classes.subtitle} variant="h5">
       <Typed
-        strings={["I am a Web Application Developer", "I am a Mern Stack Developer", "I am good at on Data Structures & Algorithms"]}
+        strings={["I am a Web Application Developer", "I am a Mern Stack Developer", "I am good at on REACT JS"]}
         typeSpeed={40}
         backSpeed={60}
         loop
@@ -67,8 +69,8 @@ const Header = () => {
   
   <a href={uploadedFileLink} target="_blank" rel="noopener noreferrer" download>
    <Button className="mt-3">
-      <i className="fas fa-download"/>
-      Download CV
+      
+      Download CV <FontAwesomeIcon icon={faDownload}/>
    </Button>
 </a>
    
