@@ -67,12 +67,12 @@ const Header = () => {
   </p>
   <h4 className="mt-4" style={{fontWeight:"bold"}}>Get My CV</h4>
   
-  <a href={uploadedFileLink} target="_blank" rel="noopener noreferrer" download>
+ 
    <Button className="mt-3">
       
-      Download CV <FontAwesomeIcon icon={faDownload}/>
+   <a href={uploadedFileLink} target="_blank" rel="noopener noreferrer" download> Download CV <FontAwesomeIcon icon={faDownload}/></a>
    </Button>
-</a>
+
    
 </Alert>
 
